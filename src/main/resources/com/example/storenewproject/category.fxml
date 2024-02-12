@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="catePane" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.storenewproject.CategoryController">
+   <children>
+      <AnchorPane layoutX="-4.0" layoutY="-3.0" prefHeight="88.0" prefWidth="816.0" style="-fx-background-color: #0000FF;">
+         <children>
+            <AnchorPane layoutX="33.0" layoutY="13.0" prefHeight="63.0" prefWidth="754.0" style="-fx-background-color: white;">
+               <children>
+                  <Label alignment="CENTER" layoutX="24.0" layoutY="8.0" prefHeight="30.0" prefWidth="706.0" text="I   N   V   E   N   T   O   R   Y        C   O   N   T   R   O   L        S   Y   S   T   E   M " textFill="#1315ac">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label contentDisplay="CENTER" layoutX="21.0" layoutY="40.0" prefHeight="18.0" prefWidth="706.0" text="                                                           C   A   T   E   G   O   R   I   E   S">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+      <AnchorPane layoutX="-4.0" layoutY="82.0" minHeight="-Infinity" prefHeight="426.8" prefWidth="226.0" style="-fx-background-color: #6495ED;">
+         <children>
+            <AnchorPane layoutX="13.0" layoutY="14.0" prefHeight="390.0" prefWidth="204.0" style="-fx-background-color: #A9A9A9;">
+               <children>
+                  <Button fx:id="addCateBtn" layoutX="22.0" layoutY="130.0" mnemonicParsing="false" onAction="#insertCategory" prefHeight="26.0" prefWidth="158.0" style="-fx-background-color: #1E90FF;" text="ADD  CATEGORY">
+                     <font>
+                        <Font name="Arial Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="23.0" layoutY="206.0" mnemonicParsing="false" onAction="#EditCategoryTable" prefHeight="26.0" prefWidth="158.0" style="-fx-background-color: #1E90FF;" text="EDIT  ">
+                     <font>
+                        <Font name="Arial Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="22.0" layoutY="168.0" mnemonicParsing="false" onAction="#DeleteCategoryTable" prefHeight="26.0" prefWidth="158.0" style="-fx-background-color: #1E90FF;" text="DELETE ">
+                     <font>
+                        <Font name="Arial Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="BackMenu" layoutX="17.0" layoutY="300.0" mnemonicParsing="false" onAction="#MenuBack" prefHeight="26.0" prefWidth="165.0" style="-fx-background-color: #B0C4DE;" text="MENU">
+                     <font>
+                        <Font name="Arial Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="17.0" layoutY="337.0" mnemonicParsing="false" onAction="#logout" prefHeight="26.0" prefWidth="165.0" style="-fx-background-color: #B0C4DE;" text="LOG  OUT ">
+                     <font>
+                        <Font name="Arial Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="addCategory" layoutX="22.0" layoutY="14.0" prefHeight="26.0" prefWidth="158.0" promptText="Category Name" style="-fx-alignment: center;" />
+                  <TextField fx:id="referenceNo" layoutX="22.0" layoutY="51.0" prefHeight="26.0" prefWidth="158.0" promptText="Reference Number" style="-fx-alignment: center;" />
+                  <TextField fx:id="description" layoutX="22.0" layoutY="90.0" prefHeight="26.0" prefWidth="158.0" promptText="Description" style="-fx-alignment: center;" />
+                  <TextField fx:id="editCategory" layoutX="19.0" layoutY="240.0" prefHeight="26.0" prefWidth="166.0" promptText=" Edit By Name" style="-fx-alignment: center;" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="223.0" layoutY="84.0" minHeight="-Infinity" prefHeight="426.0" prefWidth="588.0" style="-fx-background-color: #A9A9A9;">
+         <children>
+            <TableView fx:id="tableView" layoutX="17.0" layoutY="18.0" prefHeight="390.0" prefWidth="553.0" style="-fx-background-color: white;">
+               <columns>
+                  <TableColumn fx:id="refNumber" prefWidth="133.1999969482422" text="Reference Number" />
+                  <TableColumn fx:id="cateName" prefWidth="198.60003662109375" text="Category Name" />
+                  <TableColumn fx:id="desc" prefWidth="219.79998779296875" text="Description" />
+               </columns>
+            </TableView>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

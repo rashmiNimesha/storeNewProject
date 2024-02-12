@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="context" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="749.0" style="-fx-background-color: #D3D3D3;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.storenewproject.LoginController">
+   <children>
+      <ImageView fitHeight="507.0" fitWidth="755.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imgSecond.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="264.0" layoutY="109.0" prefHeight="314.0" prefWidth="256.0" style="-fx-background-color: white; -fx-background-radius: 30;">
+         <children>
+            <AnchorPane layoutX="147.0" layoutY="1.0" prefHeight="46.0" prefWidth="49.0">
+               <children>
+                  <ImageView fitHeight="46.0" fitWidth="54.0" layoutX="45.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@logo.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Label layoutX="14.0" layoutY="102.0" text="Username">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="136.0" text="Password">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="myUsername" layoutX="85.0" layoutY="97.0" prefHeight="26.0" prefWidth="155.0" promptText="Username" />
+            <PasswordField fx:id="myPassword" layoutX="84.0" layoutY="131.0" prefHeight="26.0" prefWidth="155.0" promptText="Password" />
+            <Button fx:id="loginViewBtn" layoutX="46.0" layoutY="202.0" mnemonicParsing="false" onAction="#LoginButton" prefHeight="26.0" prefWidth="164.0" style="-fx-background-color: #778899; -fx-background-radius: 200;" text="Login" textFill="#030303">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Button>
+            <Label blendMode="MULTIPLY" layoutX="22.0" layoutY="22.0" prefHeight="46.0" prefWidth="164.0" text="PRIYALAL STORES" textFill="#110d54">
+               <font>
+                  <Font name="Franklin Gothic Heavy" size="19.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

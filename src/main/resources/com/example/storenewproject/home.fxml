@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.storenewproject.HomeController">
+    <AnchorPane layoutX="-4.0" layoutY="-3.0" prefHeight="88.0" prefWidth="816.0" style="-fx-background-color: #0000FF;">
+        <children>
+            <AnchorPane layoutX="33.0" layoutY="13.0" prefHeight="63.0" prefWidth="754.0" style="-fx-background-color: white;">
+                <children>
+                    <Label alignment="CENTER" layoutX="24.0" layoutY="8.0" prefHeight="30.0" prefWidth="706.0" text="I   N   V   E   N   T   O   R   Y        C   O   N   T   R   O   L        S   Y   S   T   E   M " textFill="#1315ac">
+                        <font>
+                            <Font name="Arial Bold" size="16.0" />
+                        </font>
+                    </Label>
+                    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="21.0" layoutY="40.0" prefHeight="18.0" prefWidth="706.0" text="H   O   M   E">
+                        <font>
+                            <Font name="Arial Bold" size="15.0" />
+                        </font>
+                    </Label>
+                </children>
+            </AnchorPane>
+        </children></AnchorPane>
+   <ImageView fitHeight="418.0" fitWidth="581.0" layoutX="-1.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@HOME.jpg" />
+      </image></ImageView>
+   <ImageView fitHeight="444.0" fitWidth="429.0" layoutX="387.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@HOME.jpg" />
+      </image>
+   </ImageView>
+   <Button fx:id="menuBack" layoutX="42.0" layoutY="462.0" onAction="#setMenuBack" prefHeight="26.0" prefWidth="106.0" style="-fx-background-color: #B0C4DE;" text="MENU">
+      <font>
+         <Font name="Arial Bold" size="14.0" />
+      </font></Button>
+   <AnchorPane layoutX="71.0" layoutY="138.0" prefHeight="280.0" prefWidth="670.0">
+      <children>
+         <AnchorPane layoutX="-1.0" prefHeight="46.0" prefWidth="674.0" style="-fx-background-color: white;">
+            <children>
+               <Label alignment="CENTER" blendMode="MULTIPLY" layoutX="14.0" layoutY="15.0" prefHeight="16.0" prefWidth="75.0" text="FRUITS">
+                  <font>
+                     <Font name="Arial Bold" size="13.0" />
+                  </font>
+               </Label>
+               <Label blendMode="MULTIPLY" layoutX="189.0" layoutY="15.0" prefHeight="16.0" prefWidth="98.0" text="VEGETABLES">
+                  <font>
+                     <Font name="Arial Bold" size="13.0" />
+                  </font>
+               </Label>
+               <Label blendMode="MULTIPLY" layoutX="369.0" layoutY="15.0" prefHeight="16.0" prefWidth="98.0" text="GROCERY">
+                  <font>
+                     <Font name="Arial Bold" size="13.0" />
+                  </font>
+               </Label>
+               <Label alignment="CENTER" blendMode="MULTIPLY" layoutX="521.0" layoutY="15.0" prefHeight="16.0" prefWidth="130.0" text="BEVERAGES">
+                  <font>
+                     <Font name="Arial Bold" size="13.0" />
+                  </font>
+               </Label>
+            </children>
+         </AnchorPane>
+         <AnchorPane layoutY="44.0" prefHeight="236.0" prefWidth="158.0" style="-fx-background-color: #E0FFFF;">
+            <children>
+               <Label layoutX="24.0" layoutY="14.0" text="+ APPLE" textFill="#1a2daa">
+                  <font>
+                     <Font name="Arial Bold" size="13.0" />
+                  </font>
+               </Label>
+               <Label layoutX="24.0" layoutY="45.0" text="+ ORGANIC PAPAYA" textFill="#1a2daa">
+                  <font>
+                     <Font name="Arial Bold" size="13.0" />
+                  </font>
+               </Label>
+               <Label layoutX="24.0" layoutY="79.0" text="+ ORGANIC GUAVA" textFill="#1a2daa">
+                  <font>
+                     <Font name="Arial Bold" size="13.0" />
+                  </font>
+               </Label>
+               <Label layoutX="24.0" layoutY="110.0" text="+ BANANA" textFill="#1a2daa">
+                  <font>
+                     <Font name="Arial Bold" size="13.0" />
+                  </font>
+               </Label>
+               <Label layoutX="24.0" layoutY="136.0" text="+ ORANGE " textFill="#1a2daa">
+                  <font>
+                     <Font name="Arial Bold" size="13.0" />
+                  </font>
+               </Label>
+               <Label layoutX="24.0" layoutY="164.0" text="+ MANGO" textFill="#1a2daa">
+                  <font>
+                     <Font name="Arial Bold" size="13.0" />
+                  </font>
+               </Label>
+               <Label layoutX="24.0" layoutY="192.0" text="+ Pomegranate " textFill="#1a2daa">
+                  <font>
+                     <Font name="Arial Bold" size="13.0" />
+                  </font>
+               </Label>
+            </children>
+         </AnchorPane>
+         <AnchorPane layoutX="156.0" layoutY="46.0" prefHeight="236.0" prefWidth="174.0" style="-fx-background-color: WHITE;">
+            <children>
+               <Label layoutX="46.0" layoutY="75.0" text="+ CABBAGE" textFill="#1a2daa">
+                  <font>
+                     <Font name="Arial Bold" size="13.0" />
+                  </font>
+               </Label>
+               <Label layoutX="46.0" layoutY="23.0" text="+ CARROT" textFill="#1a2daa">
+                  <font>
+                     <Font name="Arial Bold" size="13.0" />
+                  </font>
+               </Label>
+               <Label layoutX="46.0" layoutY="102.0" text="+ GREEN BEANS" textFill="#1a2daa">
+                  <font>
+                     <Font name="Arial Bold" size="13.0" />
+                  </font>
+               </Label>
+               <Label layoutX="46.0" layoutY="128.0" text="+ LEEKS" textFill="#1a2daa">
+                  <font>
+                     <Font name="Arial Bold" size="13.0" />
+                  </font>
+               </Label>
+               <Label layoutX="46.0" layoutY="156.0" prefHeight="16.0" prefWidth="93.0" text="+ AMBERALLA" textFill="#1a2daa">
+                  <font>
+                     <Font name="Arial Bold" size="13.0" />
+                  </font>
+               </Label>
+               <Label layoutX="46.0" layoutY="184.0" text="+ PALA" textFill="#1a2daa">
+                  <font>
+                     <Font name="Arial Bold" size="13.0" />
+                  </font>
+               </Label>
+               <Label layoutX="46.0" layoutY="48.0" text="+ BEETROOT" textFill="#1a2daa">
+                  <font>
+                     <Font name="Arial Bold" size="13.0" />
+                  </font>
+               </Label>
+            </children></AnchorPane>
+         <AnchorPane layoutX="330.0" layoutY="46.0" prefHeight="236.0" prefWidth="166.0" style="-fx-background-color: #E0FFFF;">
+            <children>
+               <Label layoutX="43.0" layoutY="23.0" text="+ SUGAR" textFill="#1a2daa">
+                  <font>
+                     <Font name="Arial Bold" size="13.0" />
+                  </font>
+               </Label>
+               <Label layoutX="43.0" layoutY="51.0" text="+ BISCUIT" textFill="#1a2daa">
+                  <font>
+                     <Font name="Arial Bold" size="13.0" />
+                  </font>
+               </Label>
+               <Label layoutX="43.0" layoutY="75.0" text="+ EGGS" textFill="#1a2daa">
+                  <font>
+                     <Font name="Arial Bold" size="13.0" />
+                  </font>
+               </Label>
+               <Label layoutX="43.0" layoutY="102.0" text="+ BAKERY" textFill="#1a2daa">
+                  <font>
+                     <Font name="Arial Bold" size="13.0" />
+                  </font>
+               </Label>
+               <Label layoutX="43.0" layoutY="126.0" text="+ FLOUR" textFill="#1a2daa">
+                  <font>
+                     <Font name="Arial Bold" size="13.0" />
+                  </font>
+               </Label>
+               <Label layoutX="43.0" layoutY="156.0" text="+ SNACKS" textFill="#1a2daa">
+                  <font>
+                     <Font name="Arial Bold" size="13.0" />
+                  </font>
+               </Label>
+               <Label layoutX="43.0" layoutY="188.0" text="+ OIL/ FATS" textFill="#1a2daa">
+                  <font>
+                     <Font name="Arial Bold" size="13.0" />
+                  </font>
+               </Label>
+            </children></AnchorPane>
+         <AnchorPane layoutX="498.0" layoutY="46.0" prefHeight="236.0" prefWidth="174.0" style="-fx-background-color: WHITE;">
+            <children>
+               <Label layoutX="18.0" layoutY="20.0" text="+ CHOCALATE DRINK" textFill="#1a2daa">
+                  <font>
+                     <Font name="Arial Bold" size="13.0" />
+                  </font>
+               </Label>
+               <Label layoutX="17.0" layoutY="46.0" text="+ COFFEE" textFill="#1a2daa">
+                  <font>
+                     <Font name="Arial Bold" size="13.0" />
+                  </font>
+               </Label>
+               <Label layoutX="18.0" layoutY="75.0" text="+ MALT DRINK" textFill="#1a2daa">
+                  <font>
+                     <Font name="Arial Bold" size="13.0" />
+                  </font>
+               </Label>
+               <Label layoutX="18.0" layoutY="102.0" text="+ TEA" textFill="#1a2daa">
+                  <font>
+                     <Font name="Arial Bold" size="13.0" />
+                  </font>
+               </Label>
+               <Label layoutX="17.0" layoutY="127.0" text="+ WATER " textFill="#1a2daa">
+                  <font>
+                     <Font name="Arial Bold" size="13.0" />
+                  </font>
+               </Label>
+               <Label layoutX="20.0" layoutY="156.0" text="+ JUICES" textFill="#1a2daa">
+                  <font>
+                     <Font name="Arial Bold" size="13.0" />
+                  </font>
+               </Label>
+               <Label layoutX="14.0" layoutY="187.0" text="+ ENERGY DRINKS" textFill="#1a2daa">
+                  <font>
+                     <Font name="Arial Bold" size="13.0" />
+                  </font>
+               </Label>
+            </children></AnchorPane>
+      </children>
+   </AnchorPane>
+
+</AnchorPane>

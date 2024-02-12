@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="proScene" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.storenewproject.ProductManage">
+    <children>
+        <AnchorPane layoutX="-4.0" layoutY="-3.0" prefHeight="88.0" prefWidth="816.0" style="-fx-background-color: #0000FF;">
+            <children>
+                <AnchorPane layoutX="33.0" layoutY="13.0" prefHeight="63.0" prefWidth="754.0" style="-fx-background-color: white;">
+                    <children>
+                        <Label alignment="CENTER" layoutX="24.0" layoutY="8.0" prefHeight="30.0" prefWidth="706.0" text="I   N   V   E   N   T   O   R   Y        C   O   N   T   R   O   L        S   Y   S   T   E   M " textFill="#1315ac">
+                            <font>
+                                <Font name="Arial Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label contentDisplay="CENTER" layoutX="21.0" layoutY="40.0" prefHeight="18.0" prefWidth="706.0" text="                                    P   R   O   D   U   C   T      M   A   N   A   G   E   M   E   N   T">
+                            <font>
+                                <Font name="Arial Bold" size="15.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+            </children></AnchorPane>
+        <AnchorPane layoutX="-4.0" layoutY="82.0" prefHeight="418.0" prefWidth="226.0" style="-fx-background-color: #6495ED;">
+            <children>
+                <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="390.0" prefWidth="202.0" style="-fx-background-color: #A9A9A9;">
+                    <children>
+                        <Button layoutX="17.0" layoutY="118.0" mnemonicParsing="false" onAction="#addProduct" prefHeight="26.0" prefWidth="166.0" style="-fx-background-color: #1E90FF;" text="ADD  PRODUCT">
+                            <font>
+                                <Font name="Arial Bold" size="13.0" />
+                            </font>
+                        </Button>
+                        <Button layoutX="18.0" layoutY="195.0" mnemonicParsing="false" onAction="#editProduct" prefHeight="26.0" prefWidth="166.0" style="-fx-background-color: #1E90FF;" text="EDIT  ">
+                            <font>
+                                <Font name="Arial Bold" size="13.0" />
+                            </font>
+                        </Button>
+                        <Button layoutX="18.0" layoutY="155.0" mnemonicParsing="false" onAction="#deleteProduct" prefHeight="26.0" prefWidth="165.0" style="-fx-background-color: #1E90FF;" text="DELETE ">
+                            <font>
+                                <Font name="Arial Bold" size="13.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="backProMenu" layoutX="17.0" layoutY="300.0" mnemonicParsing="false" onAction="#backProductBtn" prefHeight="26.0" prefWidth="165.0" style="-fx-background-color: #B0C4DE;" text="MENU">
+                            <font>
+                                <Font name="Arial Bold" size="13.0" />
+                            </font>
+                        </Button>
+                        <Button layoutX="17.0" layoutY="337.0" mnemonicParsing="false" onAction="#logout" prefHeight="26.0" prefWidth="165.0" style="-fx-background-color: #B0C4DE;" text="LOG  OUT ">
+                            <font>
+                                <Font name="Arial Bold" size="13.0" />
+                            </font>
+                        </Button>
+                  <TextField fx:id="ProName" layoutX="17.0" layoutY="14.0" prefHeight="26.0" prefWidth="166.0" promptText="Product Name" style="-fx-alignment: center;" />
+                  <TextField fx:id="RefNumber" layoutX="16.0" layoutY="47.0" prefHeight="26.0" prefWidth="166.0" promptText="Reference Number" style="-fx-alignment: center;" />
+                  <TextField fx:id="editProName" layoutX="18.0" layoutY="232.0" prefHeight="26.0" prefWidth="166.0" promptText="Edit Product By Name" style="-fx-alignment: center;" />
+                  <ChoiceBox fx:id="proChoiceBox" layoutX="16.0" layoutY="82.0" prefHeight="26.0" prefWidth="166.0" style="-fx-background-color: white;" />
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+      <AnchorPane layoutX="222.0" layoutY="83.0" prefHeight="418.0" prefWidth="590.0" style="-fx-background-color: #A9A9A9;">
+         <children>
+            <TableView fx:id="proView" layoutX="20.0" layoutY="19.0" prefHeight="378.0" prefWidth="550.0">
+               <columns>
+                  <TableColumn fx:id="ProRefNoClmn" prefWidth="140.99998474121094" text="Reference Number" />
+                  <TableColumn fx:id="ProNameclmn" minWidth="0.0" prefWidth="168.60003662109375" text="Product Name" />
+                  <TableColumn fx:id="proCateClmn" minWidth="0.0" prefWidth="238.20001220703125" text="Category" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

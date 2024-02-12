@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="ScenePane" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.storenewproject.StockController">
+    <children>
+        <AnchorPane layoutX="-4.0" layoutY="-3.0" prefHeight="88.0" prefWidth="816.0" style="-fx-background-color: #0000FF;">
+            <children>
+                <AnchorPane layoutX="33.0" layoutY="13.0" prefHeight="63.0" prefWidth="754.0" style="-fx-background-color: white;">
+                    <children>
+                        <Label alignment="CENTER" layoutX="24.0" layoutY="8.0" prefHeight="30.0" prefWidth="706.0" text="I   N   V   E   N   T   O   R   Y        C   O   N   T   R   O   L        S   Y   S   T   E   M " textFill="#1315ac">
+                            <font>
+                                <Font name="Arial Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="21.0" layoutY="40.0" prefHeight="18.0" prefWidth="706.0" text="S   T   O   C   K">
+                            <font>
+                                <Font name="Arial Bold" size="15.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+            </children></AnchorPane>
+        <AnchorPane layoutX="-4.0" layoutY="82.0" prefHeight="418.0" prefWidth="226.0" style="-fx-background-color: #6495ED;">
+            <children>
+                <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="390.0" prefWidth="202.0" style="-fx-background-color: #A9A9A9;">
+                    <children>
+                        <Button layoutX="16.0" layoutY="156.0" mnemonicParsing="false" onAction="#addStock" prefHeight="26.0" prefWidth="166.0" style="-fx-background-color: #1E90FF;" text="ADD  TO  STOCK">
+                            <font>
+                                <Font name="Arial Bold" size="13.0" />
+                            </font>
+                        </Button>
+                        <Button layoutX="16.0" layoutY="195.0" mnemonicParsing="false" onAction="#removeStock" prefHeight="26.0" prefWidth="166.0" style="-fx-background-color: #1E90FF;" text="REMOVE FROM STOCK">
+                            <font>
+                                <Font name="Arial Bold" size="13.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="stockBackMenu" layoutX="17.0" layoutY="300.0" mnemonicParsing="false" onAction="#stockButton" prefHeight="26.0" prefWidth="165.0" style="-fx-background-color: #B0C4DE;" text="MENU">
+                            <font>
+                                <Font name="Arial Bold" size="13.0" />
+                            </font>
+                        </Button>
+                        <Button layoutX="17.0" layoutY="337.0" mnemonicParsing="false" onAction="#logout" prefHeight="26.0" prefWidth="165.0" style="-fx-background-color: #B0C4DE;" text="LOG  OUT ">
+                            <font>
+                                <Font name="Arial Bold" size="13.0" />
+                            </font>
+                        </Button>
+                  <TextField fx:id="stockName" layoutX="16.0" layoutY="14.0" prefHeight="26.0" prefWidth="166.0" promptText="Stock Name" style="-fx-alignment: center;" />
+                  <TextField fx:id="uniPrice" layoutX="16.0" layoutY="47.0" prefHeight="26.0" prefWidth="166.0" promptText="Unit Price" style="-fx-alignment: center;" />
+                  <TextField fx:id="quantity" layoutX="16.0" layoutY="81.0" prefHeight="26.0" prefWidth="166.0" promptText="Quantity" style="-fx-alignment: center;" />
+                  <TextField fx:id="supplier" layoutX="16.0" layoutY="118.0" prefHeight="26.0" prefWidth="166.0" promptText="Supplier" style="-fx-alignment: center;" />
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+      <AnchorPane layoutX="222.0" layoutY="82.0" prefHeight="418.0" prefWidth="591.0" style="-fx-background-color: #A9A9A9;">
+         <children>
+            <TableView fx:id="stockView" layoutX="18.0" layoutY="19.0" prefHeight="384.0" prefWidth="555.0">
+              <columns>
+                <TableColumn fx:id="nameClmn" prefWidth="118.80003356933594" text="Name" />
+                <TableColumn fx:id="uniPriceClmn" minWidth="0.0" prefWidth="139.20001220703125" text="Unit Price" />
+                  <TableColumn fx:id="quantityClmn" minWidth="0.0" prefWidth="133.0" text="Quantity" />
+                  <TableColumn fx:id="suppClmn" prefWidth="161.60002441406255" text="Supplier" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>
